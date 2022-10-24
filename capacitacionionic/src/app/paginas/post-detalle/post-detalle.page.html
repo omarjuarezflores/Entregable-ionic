@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>postDetalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  {{post.cine}}
+  
+  <ion-button expand="block" (click)="irAmodificar()"> Editar</ion-button>
+
+  <ion-button *ngIf="!post.activo" [disabled]="loader" expand="block" color="success" (click)="activarDesactivar()"> Activar</ion-button>
+  <ion-button  *ngIf="post.activo" [disabled]="loader"  expand="block" color="danger" (click)="activarDesactivar()"> Inactivar</ion-button>
+
+</ion-content>

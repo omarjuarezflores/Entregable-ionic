@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>empleadoFormulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>id</ion-label>
+      <ion-input [(ngModel)]="cine.cineid" placeholder="Enter text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>cine</ion-label>
+      <ion-input  [(ngModel)]="cine.nombre"  placeholder="Enter text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>FechaAlta</ion-label>
+      <ion-input  [(ngModel)]="cine.fecha_alta"  placeholder="Enter text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha Mpd</ion-label>
+      <ion-input  [(ngModel)]="cine.fecha_modificacion"  placeholder="Enter text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>activo</ion-label>
+      <ion-input  [(ngModel)]="cine.registro_activo"  placeholder="Enter text"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" color="danger" (click)="cerrar()">Cerrar</ion-button>
+  <ion-button expand="block"  color="success" (click)="guardar()">Guardar</ion-button>
+
+</ion-content>

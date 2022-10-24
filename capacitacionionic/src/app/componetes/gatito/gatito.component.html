@@ -1,0 +1,19 @@
+
+<ion-item>
+  <ion-label>Dato 1</ion-label>
+  <ion-input [(ngModel)]="dato1" type="number"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Dato 2</ion-label>
+  <ion-input [(ngModel)]="dato2" type="number"></ion-input>
+</ion-item>
+<ion-button (click)="suma()">Sumar</ion-button>
+<ion-button (click)="dividir()">Dividir</ion-button>
+
+<br>
+<br>
+<br>
+<br>
+resultado: {{resultado}}
+dato del padre: {{dato1}}, {{dato2}}
+
