@@ -19,7 +19,7 @@ public class SalaServicio {
         List<Sala> lista = salaRepositorio.findAll();
         return lista.stream().map(e -> new SalaDTO(e.getId_sala(),e.getNumero_sala(),e.getTotal_asientos(),e.getFecha_alta(),e.getFecha_modificacion(),e.getRegistro_activo())).collect(Collectors.toList());
     }
-s
+
 
     public SalaDTO obtenerSalaPorId(Long id_sala) {
         Optional<Sala> sala = salaRepositorio.findById(id_sala);
